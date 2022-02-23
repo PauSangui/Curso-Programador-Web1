@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <h1>Formulario de prueba</h1>
+     <h2>Por favor complete los siguientes campos</h2>
+          <form>
+            <p>
+                <label for="Nom">Nombre</label>
+                <input type="text" name="Nombre" id="Nom" placeholder="Nombre">
+            </p>
+            <p>
+                <label for="App">Apellido</label>
+                <input type="text" name="Apellido" id="App" placeholder="Apellido">
+            </p>
+            <p>
+                <label for="mail">Correo electronico</label>
+                <input type="email" name="email" id="mail">
+            </p>
+            <p>
+                <label for="pass">Contraseña</label>
+                <input type="password" name="Pass" id="pass" maxlength="6" size="6">
+            </p>
+            <p>
+                <h4>Sexo</h4>
+                <p>
+                    <input type="radio" name="sexo" value="hombre">
+                    <label>Hombre</label>
+                </p>
+                    <input type="radio" name="sexo" value="mujer">
+                    <label>Mujer</label>
+                <p>
+                    <input type="radio" name="sexo" value="nonbi">
+                    <label>No binario</label>
+                </p>
+            </p>
+            <p>
+                <h4>Hobbies</h4>
+                <p>
+                    <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+                    <label for="cantar">Cantar</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+                    <label for="bailar">Bailar</label>                    
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+                    <label for="nadar">Nadar</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbies[]" value="correr" id="correr">
+                    <label for="correr">Correr</label>
+                </p>
+            </p>
+            <p>
+                <h4>Estudios</h4>
+                <select name="estudios">
+                    <option value="Primario">Primario</option>
+                    <option value="Secundario">Secundario</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                </select>
+            </p>
+            <p>
+                <input type="hidden" id="comentarios">
+                <label for="comentarios" >Comentarios</label>
+                <textarea name="comentarios"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </p>
+        </form>
+</body>
+</html>
